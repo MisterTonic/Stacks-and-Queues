@@ -22,5 +22,11 @@ public class Customer {
     public String getOrder() {
         return order;
     }
+    @Override
+    public String toString() {
+        return "order; " + this.order + "\n" +
+        "placed by; " + this.name + "\n" + 
+        "on; " + this.ordertime.toString();
+    }
 }
 
